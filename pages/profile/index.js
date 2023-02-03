@@ -1,10 +1,8 @@
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
-export default function Home() {
-  const router = useRouter()
+export default function Profile() {
   return (
     <div className="container">
       <Head>
@@ -15,9 +13,8 @@ export default function Home() {
       <main>
         <Header title="Welcome to my app!" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Get started by editing <code>pages/profile/index.js</code>
         </p>
-        <button onClick={() => router.push('/profile')}>Profile</button>
       </main>
 
       <Footer />
